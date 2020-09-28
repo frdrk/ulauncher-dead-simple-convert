@@ -12,7 +12,7 @@
         "id": "dsc_kw",
         "type": "keyword",
         "name": "Convert",
-        "description": "Use [keyword] [number] [unit] to convert.",
+        "description": "Convert units of measurement from one system to many others.",
         "default_value": "c"
       }
     ]

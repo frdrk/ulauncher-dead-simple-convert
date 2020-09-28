@@ -17,7 +17,7 @@ convertableUnits = {
     "ounce":        "ounces",
     "shton":        "short-ton",
     "short ton":    "short-ton", 
-    "lhton":        "long-ton",
+    "lton":         "long-ton",
     "long ton":     "long-ton", 
     "g":            "grams",
     "gram":         "grams", 
