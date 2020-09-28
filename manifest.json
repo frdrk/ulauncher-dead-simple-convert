@@ -12,7 +12,7 @@
         "id": "dsc_kw",
         "type": "keyword",
         "name": "Convert",
-        "description": "Var visas den här texten?",
+        "description": "Use [keyword] [number] [unit] to convert.",
         "default_value": "c"
       }
     ]
