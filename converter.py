@@ -167,8 +167,26 @@ units = {
         0.0254:      "meters",
         #:           "kilometers",
     },
-
-    
+    "teaspoon-metric" : {
+        1:              "teaspoons (tsp - metric) is equal to:",
+        #:              "teaspoons",
+        0.3333:         "tablespoons",
+        0.1690701135:   "fluid ounces US",
+        0.1759753986:   "fluid ounces Imp",
+        0.0211337642:   "cups US",
+        0.0175975399:   "cups Imp",
+        5:              "milliliters (cm3)",
+        0.005:          "liters",
+        #0.000005:      "m3",
+        0.3051187205:   "in3",
+        0.0001765733:   "ft3",
+        0.0105668821:   "pints US",
+        0.0087987699:   "pints Imp",
+        0.005283441:    "quarts US",
+        0.004399385:    "quarts Imp",
+        0.0013208603:   "gallons US",
+        0.0010998462:   "gallons Imp",
+    },
 }   
 
 def convert_from_unit(fromUnit, quantity):
@@ -201,6 +219,18 @@ def convert_from_unit(fromUnit, quantity):
 
     else:
         for key in units[fromUnit]:
-            items.append(format((quantity * key),'n') + ' ' + units[fromUnit][key])
+            convertedValue = quantity * key
+            
+            # Control decimals
+            if convertedValue > 0.1: 
+                convertedValue = round(convertedValue, 2)
+
+            elif convertedValue > 0.01:
+                convertedValue = round(convertedValue, 3)
+
+            elif convertedValue > 0.001:
+                convertedValue = round(convertedValue, 4)
+            
+            items.append(format(convertedValue,'n') + ' ' + units[fromUnit][key])
 
     return items

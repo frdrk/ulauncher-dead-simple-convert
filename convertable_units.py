@@ -1,5 +1,6 @@
 # Input match : unit match
 convertableUnits = {
+    # Temperature
     "c":            "celcius",
     "celcius":      "celcius",
     "f":            "fahrenheit",
@@ -7,9 +8,54 @@ convertableUnits = {
     "k":            "kelvin",
     "kelvin":       "kelvin",
 
-    "cup":          "cups",
-    "cups":         "cups",
+    # Volume 
+    "tsp":          "teaspoon-metric",
+    "teaspoon":     "teaspoon-metric",
+    "teaspoons":    "teaspoon-metric",
+    "tbsp":         "tablespoon-metric",
+    "tablespoon":   "tablespoon-metric",
+    "tablespoons":  "tablespoon-metric",
+    "fl oz":        "floz-us",
+    "fl oz us":     "floz-us",
+    "fluid ounce":  "floz-us",
+    "fluid ounce us":"floz-us",
+    "fl oz imp":     "floz-imp",
+    "fluid ounce imp":"floz-imp",
+    "cup":          "cups-us",
+    "cups":         "cups-us",
+    "cup us":       "cups-us",
+    "cups us":      "cups-us",
+    "cup imp":      "cups-imp",
+    "cups imp":     "cups-imp",
+    "ml":           "milliliter",
+    "milliliter":   "milliliter",
+    "cm3":          "cm3",
+    "ltr":          "liter",
+    "liter":        "liter",
+    "m3":           "m3",
+    "meter cube":   "m3",
+    "in3":          "in3",
+    "inch cube":    "in3",
+    "ft3":          "ft3",
+    "pt":           "pint-us",
+    "pint":         "pint-us",
+    "pints":        "pint-us",
+    "pint us":      "pint-us",
+    "pt imp":       "pint-imp",
+    "pint imp":     "pint-imp",
+    "pints imp":    "pint-imp",
+    "qt":           "quart-us",
+    "quart":        "quart-us",
+    "quart us":     "quart-us",
+    "qt imp":       "quart-imp",
+    "quart imp":    "quart-imp",
+    "gal US":       "gallon-us",
+    "gallon":       "gallon-us",
+    "gallons US":   "gallon-us",
+    "gal imp":      "gallon-imp",
+    "gallons imp":  "gallon-imp",
     
+    # Weight
     "lb":           "pounds",
     "pound":        "pounds",
     "pounds":       "pounds",
@@ -30,7 +76,7 @@ convertableUnits = {
     "tonnes":       "metric-tonnes",  
     "metric tonnes":"metric-tonnes",
  
-
+    # Length
     "in":           "inches",
     "inch":         "inches",
     "inches":       "inches",
@@ -62,3 +108,16 @@ def parse_units(input_unit):
         return convertableUnits.get(input_unit)
     else:
         return False
+
+unitsTheWorldShouldJustGetRidOf = {
+    "tbsp us":      "tablespoon-us",
+    "tablespoon us":"tablespoon-us",
+    "tsp imp":       "teaspoon-imp",
+    "teaspoon imp":  "teaspoon-imp",
+    "tbsp imp":      "tablespoon-imp",
+    "tablespoon imp":"tablespoon-imp",
+    "tsp us":       "teaspoon-us",  
+    "teaspoon us":  "teaspoon-us",
+    "cup":          "cups-metric",
+    "cups":         "cups-metric",
+}
