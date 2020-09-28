@@ -30,7 +30,8 @@ class KeywordQueryEventListener(EventListener):
             input_quantity = query.split(' ')[0]
             input_unit = ' '.join(query.split(' ')[1:]).strip().lower()
 
-            quantity = float(input_quantity) # String to float
+            quantity = input_quantity.replace(',', '.') # Replace any colons
+            quantity = float(quantity) # String to float
 
             fromUnit = parse_units(input_unit)
 
