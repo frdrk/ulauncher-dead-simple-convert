@@ -126,7 +126,7 @@ convertableUnits = {
     "yd square":            "yd2",
     "square yard":          "yd2",
     "mi2":                  "mi2",
-    "square mile"           "mi2",
+    "square mile":          "mi2",
     "ha":                   "hectare",
     "hectare":              "hectare",
     "ac":                   "acre",    
@@ -140,15 +140,16 @@ def parse_units(input_unit):
     else:
         return False
 
+
 unitsTheWorldShouldJustGetRidOf = {
-    "tbsp us":      "tablespoon-us",
-    "tablespoon us":"tablespoon-us",
-    "tsp imp":       "teaspoon-imp",
-    "teaspoon imp":  "teaspoon-imp",
-    "tbsp imp":      "tablespoon-imp",
-    "tablespoon imp":"tablespoon-imp",
-    "tsp us":       "teaspoon-us",  
-    "teaspoon us":  "teaspoon-us",
-    "cup":          "cups-metric",
-    "cups":         "cups-metric",
+    "tbsp us":              "tablespoon-us",
+    "tablespoon us":        "tablespoon-us",
+    "tsp imp":              "teaspoon-imp",
+    "teaspoon imp":         "teaspoon-imp",
+    "tbsp imp":             "tablespoon-imp",
+    "tablespoon imp":       "tablespoon-imp",
+    "tsp us":               "teaspoon-us",  
+    "teaspoon us":          "teaspoon-us",
+    "cup":                  "cups-metric",
+    "cups":                 "cups-metric",
 }

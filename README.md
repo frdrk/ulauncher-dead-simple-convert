@@ -25,4 +25,4 @@ See [convertable_units.py](https://github.com/frdrk/ulauncher-dead-simple-conver
 
 ## Known limitations
 - No support for fractions. So can't convert for example '5/16 inches'. 
-- No support for double unit converions. For example '3 ft 6 in'
+- No support for double unit conversions. For example '3 ft 6 in'
