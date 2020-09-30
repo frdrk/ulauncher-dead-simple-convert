@@ -46,7 +46,7 @@ dict = {
     "ft2":                  "square feet (ft2)",
     "yd2":                  "square yards (yd2)",
     "mi2":                  "square miles (mi2)",
-    "hectare":              "hectare (he)",
+    "hectare":              "hectare (ha)",
     "acre":                 "acre (ac)"
 }
 
