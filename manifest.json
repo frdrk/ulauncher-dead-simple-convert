@@ -1,6 +1,6 @@
 {
     "required_api_version": "^2.0.0",
-    "name": "Dead Simple Convert",
+    "name": "##DEV## Dead Simple Convert",
     "description": "Convert units of measurement from one system to many others.",
     "developer_name": "Fredrik Jeppsson",
     "icon": "images/icon.png",
@@ -13,7 +13,7 @@
         "type": "keyword",
         "name": "Convert",
         "description": "Convert units of measurement from one system to many others.",
-        "default_value": "c"
+        "default_value": "cd"
       }
     ]
 }
