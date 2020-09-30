@@ -42,7 +42,7 @@ class KeywordQueryEventListener(EventListener):
                 logger.info("No matching unit found")
         
         except Exception:
-            logger.error('Error message')
+            logger.error('Error parsing query')
 
 
     
