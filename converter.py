@@ -206,13 +206,13 @@ units = {
     },
     "kilometers" : {
         "kilometers (km) is equal to:": 1,           
-        dict.get("inches"):             39370.08,
+        #dict.get("inches"):            39370.08,
         dict.get("feet"):               3280.84,
         dict.get("yards"):              1093.613,
         dict.get("miles"):              0.621371,
         #ict.get("millimeters"):        0,
         #dict.get("centimeters"):       0,
-        dict.get("meters"):             0.0254,
+        dict.get("meters"):             1000,
         #dict.get("kilometers"):        0,
     },
 
