@@ -136,7 +136,7 @@ units = {
         #dict.get("inches"):            0,
         dict.get("feet"):               0.083333,
         dict.get("yards"):              0.027778,
-        dict.get("miles"):              0.000016,
+        #dict.get("miles"):             0.000016,
     },
     "feet" : {
         "feet (ft) is equal to:":       1,
