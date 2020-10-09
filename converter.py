@@ -47,7 +47,13 @@ dict = {
     "yd2":                  "square yards (yd2)",
     "mi2":                  "square miles (mi2)",
     "hectare":              "hectare (ha)",
-    "acre":                 "acre (ac)"
+    "acre":                 "acre (ac)",
+
+    # Speed
+    "mps":                  "meters per second (m/s)",
+    "kmph":                 "kilomters per hour (km/h)",
+    "mph":                  "miles per hour (mph)",
+    "knot":                 "knots (kn)",
 }
 
 
@@ -666,6 +672,36 @@ units = {
         dict.get("yd2"):                4840,
         dict.get("mi2"):                0.0015625,
         #dict.get("acre"):              0,
+    },
+
+    ### Speed
+    "mps" : {
+        "meter per second (m/s) is equal to:":      1,
+        #dict.get("mps"):                0,
+        dict.get("kmph"):                3.6,
+        dict.get("mph"):                 2.2369362921,
+        dict.get("knot"):                1.9438444924,
+    },
+    "kmph" : {
+        "kilometers per hour (km/h) is equal to:":      1,
+        dict.get("mps"):                 0.2777777778,
+        #dict.get("kmph"):                0,
+        dict.get("mph"):                 0.6213711922,
+        dict.get("knot"):                0.5399568035,
+    },
+    "mph" : {
+        "miles per hour (mph) is equal to:":      1,
+        dict.get("mps"):                 0.44704,
+        dict.get("kmph"):                1.609344,
+        #dict.get("mph"):                0,
+        dict.get("knot"):                0.8689762419,
+    },
+    "knot" : {
+        "knots (kn) is equal to:":      1,
+        dict.get("mps"):                 0.5144444444,
+        dict.get("kmph"):                1.852,
+        dict.get("mph"):                 1.150779448,
+        #dict.get("knot"):               0,
     },
 
 

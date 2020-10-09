@@ -131,7 +131,17 @@ convertableUnits = {
     "hectare":              "hectare",
     "ac":                   "acre",    
     "acre":                 "acre",
-    
+
+    # Speed
+    "m/s":                  "mps",    
+    "mps":                  "mps",
+    "km/h":                 "kmph",    
+    "kmph":                 "kmph",
+    "mi/h":                 "mph",    
+    "mph":                  "mph",
+    "kt":                   "knot",
+    "kn":                   "knot",
+    "knot":                 "knot",
 }
 
 def parse_units(input_unit):
