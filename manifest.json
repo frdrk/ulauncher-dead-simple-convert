@@ -1,7 +1,7 @@
 {
     "required_api_version": "^2.0.0",
-    "name": "##DEV## Dead Simple Convert",
-    "description": "Convert units of measurement from one system to many others.",
+    "name": "Dead Simple Convert",
+    "description": "Convert units of measurement from one system to many other.",
     "developer_name": "Fredrik Jeppsson",
     "icon": "images/icon.png",
     "options": {
@@ -12,8 +12,8 @@
         "id": "dsc_kw",
         "type": "keyword",
         "name": "Convert",
-        "description": "Convert units of measurement from one system to many others.",
-        "default_value": "cd"
+        "description": "Convert units of measurement from one system to many other.",
+        "default_value": "c"
       }
     ]
 }
