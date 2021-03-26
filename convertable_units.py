@@ -8,6 +8,25 @@ convertableUnits = {
     "k":            "kelvin",
     "kelvin":       "kelvin",
 
+    #Duration
+    "ns":           "nanoseconds",
+    "us":           "microseconds",
+    "ms":           "milliseconds",
+    "s":            "seconds",
+    "sec":          "seconds",
+    "seconds":      "seconds",
+    "m":            "minutes",
+    "min":          "minutes",
+    "minutes":      "minutes",
+    "h":            "hours",
+    "hours":        "hours",
+    "days":         "days",
+    "weeks":        "weeks",
+    "months":       "months",
+    "a":            "years",
+    "yr":           "years",
+    "years":        "years",
+
     # Volume 
     "tsp":          "teaspoon-metric",
     "teaspoon":     "teaspoon-metric",
